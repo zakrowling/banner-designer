@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html >
+  <head>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1600px">
+  <title>Virgin Australia Home Banner Designer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700" rel="stylesheet" />
+  <link rel="shortcut icon" href="http://www.virginaustralia.com/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+
+  <div class="form-fields">
+    <div class="field">
+      <strong>Primary headline</strong> (60 character max)<br>
+      <input type="text" class="textbox primary-headline" value="Lorem ipsum dolor sit amet consectetur" onfocus="clearText(this);" maxlength="60" />
+    </div>
+    <div class="field">
+      <strong>Secondary headline</strong> (120 character max)<br>
+      <input type="text" class="textbox secondary-headline" value="Lorem ipsum dolor sit amet consectetur" onfocus="clearText(this);" maxlength="120" />
+    </div>
+    <div class="field">
+      <strong>Terms and conditions text</strong><br>
+      <input type="text" class="textbox terms-and-conditions" value="*Lorem ipsum dolor sit amet consectetur." onfocus="clearText(this);" />
+    </div>
+    <div class="field">
+      <strong>Text color</strong> (#)<br>
+      <input type="color" class="textcolor" onchange="changeColor();" />
+    </div>
+    <div class="field">
+      <strong>Banner image</strong> (1600px x 600px)<br>
+      <input type="file" onchange="readURL(this);" accept="image/*" />
+    </div>
+  </div><!--form-fields-->
+
+  <div class="page">
+    <a href="javascript:;" class="edit-image">Reposition Image</a>
+    <a href="javascript:;" class="filter darken-image">Darken Image</a>
+    <a href="javascript:;" class="filter lighten-image">Lighten Image</a>
+    <div class="banner">
+      <div class="container">
+        <img src="img/search.jpg" alt="" class="search" data-html2canvas-ignore />
+        <div class="banner-text">
+          <h1>Lorem ipsum dolor sit amet consectetur</h1>
+          <h2>Lorem ipsum dolor sit amet consectetur</h2>
+          <!--
+          <h3 class="pricepoint one">
+            <span>Brisbane to <strong class="destination">Port&nbsp;Vila</strong></span>
+            <strong class="price">
+              <em>$</em><b class="cost">300</b><em>*</em></strong>
+              <small>One way</small>
+          </h3>
+          -->
+          <h4>*Lorem ipsum dolor sit amet consectetur.</h4>
+        </div>
+      </div>
+      <img id="banner-image" src="" />
+    </div><!--banner-->
+  </div><!--page-->
+
+  <div class="save-actions">
+    <div class="save-full-banner">Save design (jpeg)</div>
+    <div class="save-image-only">Save banner image (jpeg)</div>
+  </div>
+
+  <div class="help">
+    <a href="" class="tooltip" data-tooltip="The banner designer helps create simple banners without needing extra software. Upload your own images, reposition them in the template and resize them by selecting the corners of the image in the design. Fill in the details and save the entire design or just the background image.">?</a>
+  </div>
+
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="js/index.js"></script>
+  <script src="js/interact.min.js"></script>
+  <script src="js/drag-and-resize.js"></script>
+  <script src="js/html2canvas.min.js"></script>
+
+</body>
+</html>
